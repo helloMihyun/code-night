@@ -1,0 +1,72 @@
+.top {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  color: ghostwhite;
+  background-color: #337ab7;
+}
+
+.top h1 {
+  font-size: 60px;
+}
+
+.top p {
+  font-size: 27px;
+}
+
+.kanban-col {
+    width: 300px;
+    margin-right: 20px;
+    float: left;
+}
+
+.kanban-centered {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.kanban-entry {
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.kanban-enry-center h5 {
+  color: #337ab7;
+}
+
+.kanban-details {
+  margin-top: 30px;
+  padding: 3px;
+}
+
+.assignedTo {
+  float: right;
+  padding-right: 10px;
+}
+
+.panel-body {
+  max-height: 450px !important;
+  overflow: scroll;
+}
+
+.red {
+  background-color: #f98bae;
+}
+
+.green {
+  background-color: #93f9b7;
+}
+
+.editDescription {
+  width: 100%;
+}
+
+.editDate {
+  width: 40%;
+}
+
+.editAssignee {
+  width: 40%;
+  float:right;
+}

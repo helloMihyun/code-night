@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Shivanshu</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kanban board</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div class="top text-center">
+      <h1>Kanban Board</h1>
+      <p>Double click on fields to edit</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                    PLANNED
+                </div>
+                <div class="panel-body">
+                    <div id="planned" class="kanban-centered">
+
+                        <span>No items to display.</span>
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="javascript:void(0);" onclick="newTask('planned');" data-toggle="modal" data-target="#taskmodal">Add a task...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                    STARTED
+                </div>
+                <div class="panel-body">
+                    <div id="started" class="kanban-centered">
+
+                        <span>No items to display.</span>
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="javascript:void(0);" onclick="newTask('started');" data-toggle="modal" data-target="#taskmodal">Add a task...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                    DONE
+                </div>
+                <div class="panel-body">
+                    <div id="done" class="kanban-centered">
+
+                        <span>No items to display.</span>
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="javascript:void(0);" onclick="newTask('done');" data-toggle="modal" data-target="#taskmodal">Add a task...</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="taskmodal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Create new task</h4>
+        </div>
+        <div class="modal-body">
+          <div style="width:100%;display:inline-block;">
+            <label class="col-sm-4">Description</label>
+            <input type="text" class="col-md-8" id="newDesc" />
+          </div>
+          <div style="width:100%;display:inline-block;">
+            <label class="col-sm-4">Date (in mm/dd/yy)</label>
+            <input type="text" class="col-md-8" id="newDate" />
+          </div>
+          <div style="width:100%;display:inline-block;">
+            <label class="col-sm-4">Assignee</label>
+            <select class="col-sm-8" id="newAssignee">
+              <option value="">--Select assignee--</option>
+              <option value="jane">jane</option>
+              <option value="james">james</option>
+              <option value="jenny">jenny</option>
+            </select>
+          </div>
+          <div style="width:100%;display:inline-block;">
+            <label class="col-sm-4">Status</label>
+            <select class="col-sm-8" id="newStatus" >
+              <option value="">--Select status--</option>
+              <option value="planned">planned</option>
+              <option value="started">started</option>
+              <option value="done">done</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="createNewTask();" class="btn btn-default" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
+  
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
